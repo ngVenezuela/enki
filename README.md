@@ -1,22 +1,43 @@
-Enki
+# Enki
 
-Enki (nombre aún por confimar, para el significado leer postdata) es una webapp donde se puedan agregar propuestas de proyectos únicamente para la comunidad ngVenezuela donde la misma votará por ellos. 
+> Un proyecto para crear proyectos
 
-Esta idea surge en el momento en que la comunidad tuvo la necesidad de tener una herramienta en donde plasmar los proyectos que los integrantes han creado o tienen en mente, que puedan beneficiar a la comunidad; ademas de tener otros tantos motivos como el de animar a la comunidad a movilizarse, el de integrar a los que estan aprendiendo Angular o generar mas conocimientos de los que se tiene y manejar los futuros proyectos que vendrán despúes de este.
+*“La idea es crear una webapp donde la comunidad pueda agregar propuestas de proyectos y votar por ellos para desarrollar el más interesante.”*
+**- [Jobsamuel Núñez](https://github.com/jobsamuel)**
 
-La herramienta tiene ciertas funciones para cumplir con lo básico:
+*“Entre los muchos motivos de este proyecto está el de animar a la comunidad, integrando a los que están aprendiendo AngularJS y, además, crear los cimientos para manejar los futuros proyectos que pueda desencadenar el mismo.”*
+**- [Andrés Pérez](https://github.com/code-andres)**
 
-  1. Aporte de un nuevo proyecto
-  2. El miembro debe estar en la organizacion de ngVenezuela de GitHub (aun por confirmar las otros medios)
-  3. El proyecto debe tener una descripción
-  4. El aporte tendra un sistema para contar y mostrar votos (solo un voto por miembro)
-  5. Los proyectos en votación seran Privados (únicamente ver/interactuar para los miembros)
-  6. Modo de visualización, decidir entre: (Lista, Panel, Ótros métodos)
-  7. Decidir que tecnologías usar (Angular es obligatorio)
+### ¿Por qué Enki?
 
-Bueno, es básicamente eso con características simples para crear una base o borrador y partir de ahí se harán cambios más avanzados, ahora lo IMPORTANTE es que todos deben participar, les recomiendo crear su branch, editar este documento y aportar sus propias ideas, es necesario que la mayoría de la comunidad participe, por lo menos en hacer comentarios.
+*El nombre **Enki** surge del Dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.*
 
-Recuerden este documento esta sujeto a cambios así aporten ideas sin pena.
+Pueden ver la [lista de nombres](enki/Nombres.md) y agregar otros con su significado si éste no les parece el más adecuado.
 
-PD: El nombre Enki surge del dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.
-PDD: Ver ListaNombres.txt para otra opciones.
+
+## El proyecto
+
+Enki (nombre aún por confirmar) surge en el momento en que la comunidad ngVenezuela tuvo la necesidad utilizar una herramienta en donde plasmar los proyectos que los integrantes tienen en mente y comenzar a desarrollarlos. Además, Enki busca animar a la comunidad a movilizarse e integrar a los que están aprendiendo AngularJS. Asimismo, generar más conocimientos y manejar los futuros proyectos que vendrán.
+
+## La aplicación
+
+La aplicación debe tener las siguientes funciones básicas:
+
+- Permitir el aporte de un nuevo proyecto.
+- Requerir una breve descripción sobre el el proyecto.
+- Permitir votar y mostrar el número de votos que tiene cada aporte (propuesta de proyecto).
+- Mantener en privado los proyectos que están en etapa de votación (únicamente los verán/interactuarán los miembros de la comunidad).
+- Permitir visualizar los aportes en una Lista, Grid, etc.
+- Agregar opciones de tecnologías a utilizar (AngularJS es obligatorio).
+
+A partir de estas características simples se harán los cambios más avanzados :wink:
+
+## La comunidad
+
+Lo **IMPORTANTE** de Enki es que todos participen. Para ello, es necesario que hagan un *fork* y creen su propia rama; en la cual podrán editar este documento y aportar sus ideas.
+
+Recuerden, el objetivo de Enki es que la mayoría de la comunidad participe, por lo menos creando nuevos *issues*.
+
+### NOTA
+
+Este documento esta sujeto a cambios... es un trabajo en progreso. Así que no duden en aportar sus ideas.
