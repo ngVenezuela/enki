@@ -19,3 +19,4 @@ Bueno, es básicamente eso con características simples para crear una base o bo
 Recuerden este documento esta sujeto a cambios así aporten ideas sin pena.
 
 PD: El nombre Enki surge del dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.
+PDD: Ver ListaNombres.txt para otra opciones.
