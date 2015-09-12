@@ -2,17 +2,17 @@
 
 > Un proyecto para crear proyectos
 
-*“La idea es crear una webapp donde la comunidad pueda agregar propuestas de proyectos y votar por ellos para desarrollar el más interesante.”*
-**- [Jobsamuel Núñez](https://github.com/jobsamuel)**
+> “La idea es crear una webapp donde la comunidad pueda agregar propuestas de proyectos y votar por ellos para desarrollar el más interesante.”
+> - [Jobsamuel Núñez](https://github.com/jobsamuel)
 
-*“Entre los muchos motivos de este proyecto está el de animar a la comunidad, integrando a los que están aprendiendo AngularJS y, además, crear los cimientos para manejar los futuros proyectos que pueda desencadenar el mismo.”*
-**- [Andrés Pérez](https://github.com/code-andres)**
+>“Entre los muchos motivos de este proyecto está el de animar a la comunidad, integrando a los que están aprendiendo AngularJS y, además, crear los cimientos para manejar los futuros proyectos que pueda desencadenar el mismo.”
+> - [Andrés Pérez](https://github.com/code-andres)
 
 ### ¿Por qué Enki?
 
-*El nombre **Enki** surge del Dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.*
+El nombre **Enki** surge del Dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.
 
-Pueden ver la [lista de nombres](enki/Nombres.md) y agregar otros con su significado si éste no les parece el más adecuado.
+Pueden ver la [lista de nombres](Nombres.md) y agregar otros con su significado si éste no les parece el más adecuado.
 
 
 ## El proyecto
@@ -38,6 +38,10 @@ Lo **IMPORTANTE** de Enki es que todos participen. Para ello, es necesario que h
 
 Recuerden, el objetivo de Enki es que la mayoría de la comunidad participe, por lo menos creando nuevos *issues*.
 
+# Licencia
+
+[Licencia MIT](http://opensource.org/licenses/MIT) © ngVenezuela
+
 ### NOTA
 
-Este documento esta sujeto a cambios... es un trabajo en progreso. Así que no duden en aportar sus ideas.
+Este documento esta sujeto a cambios; es un trabajo en progreso. Así que no duden en aportar sus ideas.
