@@ -5,14 +5,14 @@ Enki (nombre aún por confimar, para el significado leer postdata) es una webapp
 Esta herramienta tiene ciertas funciones para cumplir con lo básico:
 
   1. Aporte de un nuevo proyecto
-    a. El miembro debe estar en la organizacion de ngVenezuela de GitHub (aun por confirmar las otros medios)
-    b. El proyecto debe tener una descripción
-    c. El aporte tendra un sistema para contar y mostrar votos (solo un voto por miembro)
-    d. Los proyectos en votación seran Privados (únicamente ver/interactuar para los miembros)
+    El miembro debe estar en la organizacion de ngVenezuela de GitHub (aun por confirmar las otros medios)
+    El proyecto debe tener una descripción
+    El aporte tendra un sistema para contar y mostrar votos (solo un voto por miembro)
+    Los proyectos en votación seran Privados (únicamente ver/interactuar para los miembros)
   2. Modo de visualización, decidir entre:
-    a. Lista
-    b. Panel
-    c. Ótros métodos
+    Lista
+    Panel
+    Ótros métodos
   3. Decidir que tecnologías usar
     a. Angular es obligatorio :)
 
