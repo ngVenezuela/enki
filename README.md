@@ -2,20 +2,17 @@
 
 > Un proyecto para crear proyectos
 
-> “La idea es crear una webapp donde la comunidad pueda agregar propuestas de proyectos y votar por ellos para desarrollar el más interesante.”
-> - [Jobsamuel Núñez](https://github.com/jobsamuel)
+> “La idea es crear una webapp donde la comunidad pueda agregar propuestas de proyectos y votar por ellos para desarrollar el más interesante.” - [Jobsamuel Núñez](https://github.com/jobsamuel)
 
->“Entre los muchos motivos de este proyecto está el de animar a la comunidad, integrando a los que están aprendiendo AngularJS y, además, crear los cimientos para manejar los futuros proyectos que pueda desencadenar el mismo.”
-> - [Andrés Pérez](https://github.com/code-andres)
+>“Entre los muchos motivos de este proyecto está el de animar a la comunidad, integrando a los que están aprendiendo AngularJS y, además, crear los cimientos para manejar los futuros proyectos que pueda desencadenar el mismo.” - [Andrés Pérez](https://github.com/code-andres)
 
-### ¿Por qué Enki?
+#### ¿Por qué Enki?
 
 El nombre **Enki** surge del Dios mesopotámico de la inteligencia, lógica, creación, desarrollo y del agua.
 
 Pueden ver la [lista de nombres](Nombres.md) y agregar otros con su significado si éste no les parece el más adecuado.
 
-
-## El proyecto
+# El proyecto
 
 Enki (nombre aún por confirmar) surge en el momento en que la comunidad ngVenezuela tuvo la necesidad utilizar una herramienta en donde plasmar los proyectos que los integrantes tienen en mente y comenzar a desarrollarlos. Además, Enki busca animar a la comunidad a movilizarse e integrar a los que están aprendiendo AngularJS. Asimismo, generar más conocimientos y manejar los futuros proyectos que vendrán.
 
@@ -34,14 +31,14 @@ A partir de estas características simples se harán los cambios más avanzados 
 
 ## La comunidad
 
-Lo **IMPORTANTE** de Enki es que todos participen. Para ello, es necesario que hagan un *fork* y creen su propia rama; en la cual podrán editar este documento y aportar sus ideas.
+Lo **IMPORTANTE** de Enki es que todos participen. Para ello, es necesario hacer un *fork* y crear una propia rama; en la cual se podrá editar este documento y aportar sus ideas.
 
 Recuerden, el objetivo de Enki es que la mayoría de la comunidad participe, por lo menos creando nuevos *issues*.
 
-# Licencia
-
-[Licencia MIT](http://opensource.org/licenses/MIT) © ngVenezuela
-
-### NOTA
+#### NOTA
 
 Este documento esta sujeto a cambios; es un trabajo en progreso. Así que no duden en aportar sus ideas.
+
+# Licencia
+
+[Licencia MIT](http://opensource.org/licenses/MIT) © [ngVenezuela](https://github.com/ngVenezuela)
