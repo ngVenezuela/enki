@@ -1,6 +1,8 @@
 Enki
 
-Enki (nombre aún por confimar, para el significado leer postdata) es una webapp donde se puedan agregar propuestas de proyectos únicamente para la comunidad ngVenezuela donde la misma votará por ellos. Esta idea surge en el momento en que la comunidad tuvo la necesidad de tener una herramienta en donde plasmar los proyectos que los integrantes han creado o tienen en mente, que puedan beneficiar a la comunidad; ademas de tener otros tantos motivos como el de animar a la comunidad a movilizarse, el de integrar a los que estan aprendiendo Angular o generar mas conocimientos de los que se tiene y manejar los futuros proyectos que vendrán despúes de este.
+Enki (nombre aún por confimar, para el significado leer postdata) es una webapp donde se puedan agregar propuestas de proyectos únicamente para la comunidad ngVenezuela donde la misma votará por ellos. 
+
+Esta idea surge en el momento en que la comunidad tuvo la necesidad de tener una herramienta en donde plasmar los proyectos que los integrantes han creado o tienen en mente, que puedan beneficiar a la comunidad; ademas de tener otros tantos motivos como el de animar a la comunidad a movilizarse, el de integrar a los que estan aprendiendo Angular o generar mas conocimientos de los que se tiene y manejar los futuros proyectos que vendrán despúes de este.
 
 Esta herramienta tiene ciertas funciones para cumplir con lo básico:
 
