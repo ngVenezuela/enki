@@ -27,7 +27,18 @@ La aplicación debe tener las siguientes funciones básicas:
 - Permitir visualizar los aportes en una Lista, Grid, etc.
 - Agregar opciones de tecnologías a utilizar (AngularJS es obligatorio).
 
-A partir de estas características simples se harán los cambios más avanzados :wink:
+A partir de estas características simples se harán los cambios más avanzados.
+
+## El prototipo
+
+Si deseas echarle un vistazo al prototipo *no funcional*, solo debes hacer esto:
+
+```bash
+$ git clone git@github.com:ngVenezuela/enki.git
+$ npm install
+$ gulp
+```
+*Es necesario tener [Node](https://nodejs.org/en/) instalado* :wink:
 
 ## La comunidad
 
