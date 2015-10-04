@@ -1,0 +1,175 @@
+a:link {text-decoration: none;color: #000;}
+a:visited {text-decoration: none;color: #000;}
+
+/*
+ * Body
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background-image: url(../img/bg/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body .animated {
+    animation-duration: 1s;
+}
+
+/* 
+ * Menu
+ */
+
+.cd_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cd_header #cd_logo {
+    margin-left: 5%;
+}
+
+.cd_header #cd_logo img {
+    width: 75px;
+    height: 20.5px;
+}
+
+.cd_main_nav {
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.cd_main_nav ul {
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.cd_main_nav > ul > li {
+    display: inline;
+    padding: 0 25px 0 25px;
+    list-style-type: none;
+}
+
+.cd_main_nav > ul > li > a {
+    color: #3d3536;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+ * Enki title
+ */
+
+.enki_title {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ * Content & Enki list table
+ */
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content table {
+    border-collapse: separate;
+    border-spacing: 0px 3px;
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content table > thead {
+    border: 0;
+}
+
+.content table > thead th {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content table > tbody {
+    background-color: rgba(250, 250, 250, 0.50);
+    font-size: 22px;
+    color: #333;
+}
+
+.content table > tbody td {
+    padding: 0;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.flag1 {
+    width: 40px;
+    height: 60px;
+    float: left;
+    margin-left: 5%;
+    background: url(../img/tile/min-flag-gold.png) no-repeat 0% 0%;
+    background-size: 40px 60px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+}
+
+.flag2 {
+    width: 40px;
+    height: 60px;
+    float: left;
+    margin-left: 5%;
+    background: url(../img/tile/min-flag-silver.png) no-repeat 0% 0%;
+    background-size: 40px 60px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+}
+
+.flag3 {
+    width: 40px;
+    height: 60px;
+    float: left;
+    margin-left: 5%;
+    background: url(../img/tile/min-flag-bronce.png) no-repeat 0% 0%;
+    background-size: 40px 60px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+}
+
+.flag {
+    width: 40px;
+    height: 60px;
+    float: left;
+    margin-left: 5%;
+    background: url(../img/tile/min-flag.png) no-repeat 0% 0%;
+    background-size: 40px 60px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+}
