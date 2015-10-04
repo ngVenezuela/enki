@@ -1,0 +1,25 @@
+<table class="fadeInUp animated">
+
+    <thead>
+        <tr>
+            <th>Proyecto</th>
+            <th>Por</th>
+            <th>Votos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr ng-repeat="proyecto in proyectos">
+            <td>
+                <a ui-sref="detalles({id: proyecto.id})">
+                    <span class="{{ proyecto.etiqueta }}">{{ proyecto.id }}</span>{{ proyecto.nombre }}
+                </a>
+            </td>
+            <td><a href="#">@{{ proyecto.autor }}</a></td>
+            <td>{{ proyecto.votos }}</td>
+        </tr>
+
+    </tbody>
+
+</table>

@@ -1,0 +1,29 @@
+{
+  "name": "enki",
+  "version": "0.1.0",
+  "description": "Un proyecto para crear proyectos.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngVenezuela/enki.git"
+  },
+  "keywords": [
+    "proyect-manager",
+    "angularjs",
+    "comunidad",
+    "venezuela"
+  ],
+  "author": "Jobsamuel Núñez <jobsamuel@gustico.com> (http://jobsamuel.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngVenezuela/enki/issues"
+  },
+  "homepage": "https://github.com/ngVenezuela/enki#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.8",
+    "gulp": "^3.9.0"
+  }
+}
