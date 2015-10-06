@@ -1,0 +1,19 @@
+{
+  "name": "enki",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ngVenezuela/enki",
+  "description": "Un proyecto para crear proyectos",
+  "main": "gulpfile.js",
+  "moduleType": [],
+  "keywords": [
+    "venezuela",
+    "project-manager",
+    "team",
+    "colaboration"
+  ],
+  "authors": [
+    "Andrés Pérez",
+    "Jobsamuel Núñez"
+  ],
+  "license": "MIT"
+}
