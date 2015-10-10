@@ -1,6 +1,6 @@
 {
   "name": "enki",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Un proyecto para crear proyectos.",
   "main": "gulpfile.js",
   "scripts": {
