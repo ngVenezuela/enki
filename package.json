@@ -1,6 +1,6 @@
 {
   "name": "enki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Un proyecto para crear proyectos.",
   "main": "gulpfile.js",
   "scripts": {
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/ngVenezuela/enki#readme",
   "devDependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
     "browser-sync": "^2.9.8",
     "gulp": "^3.9.0"
   }
