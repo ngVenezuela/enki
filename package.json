@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/ngVenezuela/enki#readme",
   "devDependencies": {
-    "angular": "^1.4.7",
-    "angular-ui-router": "^0.2.15",
-    "browser-sync": "^2.9.8",
-    "gulp": "^3.9.0"
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1"
   }
 }
