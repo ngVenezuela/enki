@@ -1,4 +1,3 @@
-
 /**
  * Rutas de la aplicación.
  */
@@ -10,7 +9,7 @@
         .config(routes);
 
     // Dependencias
-    routes.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+    routes.$injector = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
     /**
     * @description gestiona las rutas de la aplicación.
@@ -24,16 +23,21 @@
             .state('inicio', {
                 url: '/',
                 templateUrl: '../templates/inicio.html',
-                controller: 'demoCtrl'
+                controller: 'demoCtrl',
+                controllerAs: 'ctrl'
             })
             .state('detalles', {
                 url: '/proyecto/:id',
                 templateUrl: '../templates/detalles.html',
-                controller: 'demoCtrl'
+                controller: 'demoCtrl',
+                controllerAs: 'ctrl'
             });
-        $locationProvider.html5Mode(false);
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     }
-    
-    // Eliminar el cache cuando se detecte cambios en las rutas
-    
+
+    // TODO: Eliminar el cache cuando se detecte cambios en las rutas
+
 })();

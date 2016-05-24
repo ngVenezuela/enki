@@ -2,18 +2,19 @@
 * Controlador de la aplicación
 */
 
-
 (function () {
     'use strict';
-
     angular
         .module('enki')
         .controller('demoCtrl', demoCtrl);
 
-    function demoCtrl($scope, $state) {
-        $scope.numero = $state.params.id;
+    demoCtrl.$injector = ['$stateParams'];
+
+    function demoCtrl($stateParams) {
+        var vm = this;
+        vm.numero = $stateParams.id;
         
-        $scope.proyectos = [
+        vm.proyectos = [
             {
                 id: 1,
                 etiqueta: 'flag1',
@@ -50,7 +51,5 @@
                 votos: 31
             },
         ];
-    };
-     
-     
+    }
 })();
