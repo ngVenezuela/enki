@@ -1,7 +1,9 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+    browserSync = require('browser-sync').create(),
+    size = require('gulp-size'),
+    uglify  = require('gulp-uglify'),
+    rename = require('gulp-rename');
 
-gulp.task('default', ['browser-sync']);
 
 // Servidor estático.
 // Crea un servidor local y efectúa un Livereload
@@ -14,3 +16,22 @@ gulp.task('browser-sync', function() {
     });
     gulp.watch(['./src/**/*'], browserSync.reload);
 });
+
+// Js Bundle
+gulp.task('bundleJS', function () {
+    
+    gulp.src('./node_modules/angular/angular.js')
+        .pipe(uglify())
+        .pipe(size({gzip: true, showFiles: true}))
+        .pipe(rename('angular.min.js'))
+        .pipe(gulp.dest('./src/js'));
+        
+    gulp.src('./node_modules/angular-ui-router/release/angular-ui-router.js')
+        .pipe(uglify())
+        .pipe(size({gzip: true, showFiles: true}))
+        .pipe(rename('angular-ui-router.min.js'))
+        .pipe(gulp.dest('./src/js')); 
+});
+
+
+gulp.task('default', ['browser-sync', 'bundleJS']);

@@ -1,80 +1,76 @@
-a:link {text-decoration: none;color: #000;}
-a:visited {text-decoration: none;color: #000;}
-
-/*
- * Body
- */
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 * {
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
 }
-
+*::before,
+* ::after {
+  box-sizing: border-box;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
-    height: 100%;
-    background-image: url(../img/bg/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+  margin: 10px 0 100px;
+}
+a {
+  color: #303030;
+  text-decoration: none;
+  border-bottom: 1px dotted #505050;
+}
+a:hover {
+  color: #303030;
+  text-decoration: none;
+  border-bottom: 1px solid #505050;
 }
 
-body .animated {
-    animation-duration: 1s;
+header, div.page {
+    width: 760px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.page {
+  min-height: 100%;
+  margin-bottom: -142px;
+}
+header h1 {
+	font-size: 24px;
+	line-height: 26.4px;
 }
 
-/* 
- * Menu
- */
-
-.cd_header {
-    position: fixed;
-    top: 0;
+p {
+  margin: 0 0 15px 0;
+  line-height: 1.5em;
+}
+footer {
+  border-top: 1px solid #d8d8d8;
+  position: absolute;
     left: 0;
+    bottom: 0;
+    height: 50px;
     width: 100%;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-.cd_header #cd_logo {
-    margin-left: 5%;
+footer a {
+  color: #808080;
 }
-
-.cd_header #cd_logo img {
-    width: 75px;
-    height: 20.5px;
+.footer a:hover {
+  color: #303030;
 }
-
-.cd_main_nav {
-    margin-right: 5%;
-    overflow: hidden;
+footer p {
+  width: 760px;
+  color: #808080;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin: 15px 0 0 0;
+  padding: 0;
+  text-align: center
 }
-
-.cd_main_nav ul {
-    line-height: 70px;
-    margin: 0;
-    padding: 0;
-}
-
-.cd_main_nav > ul > li {
-    display: inline;
-    padding: 0 25px 0 25px;
-    list-style-type: none;
-}
-
-.cd_main_nav > ul > li > a {
-    color: #3d3536;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-/*
- * Enki title
- */
 
 .enki_title {
     width: 100%;
@@ -84,92 +80,34 @@ body .animated {
     justify-content: center;
     align-items: center;
 }
-
-/*
- * Content & Enki list table
- */
-
-.content {
-    margin-top: 20px;
+.enki_icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
     display: flex;
-    justify-content: center;
-}
 
-.content table {
-    border-collapse: separate;
-    border-spacing: 0px 3px;
-    width: 70%;
-    margin-bottom: 20px;
-    text-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    
+    align-items: center;  
 }
+/*helpers*/
 
-.content table > thead {
-    border: 0;
+
+/*scroll*/
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    background-color: #FFF;
 }
-
-.content table > thead th {
-    font-size: 24px;
-    text-align: center;
-    text-transform: uppercase;
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #FFF;
 }
-
-.content table > tbody {
-    background-color: rgba(250, 250, 250, 0.50);
-    font-size: 22px;
-    color: #333;
-}
-
-.content table > tbody td {
-    padding: 0;
-    height: 70px;
-    line-height: 70px;
-    cursor: pointer;
-}
-
-.flag1 {
-    width: 40px;
-    height: 60px;
-    float: left;
-    margin-left: 5%;
-    background: url(../img/tile/min-flag-gold.png) no-repeat 0% 0%;
-    background-size: 40px 60px;
-    font-weight: bold;
-    line-height: 40px;
-    color: #000;
-}
-
-.flag2 {
-    width: 40px;
-    height: 60px;
-    float: left;
-    margin-left: 5%;
-    background: url(../img/tile/min-flag-silver.png) no-repeat 0% 0%;
-    background-size: 40px 60px;
-    font-weight: bold;
-    line-height: 40px;
-    color: #000;
-}
-
-.flag3 {
-    width: 40px;
-    height: 60px;
-    float: left;
-    margin-left: 5%;
-    background: url(../img/tile/min-flag-bronce.png) no-repeat 0% 0%;
-    background-size: 40px 60px;
-    font-weight: bold;
-    line-height: 40px;
-    color: #000;
-}
-
-.flag {
-    width: 40px;
-    height: 60px;
-    float: left;
-    margin-left: 5%;
-    background: url(../img/tile/min-flag.png) no-repeat 0% 0%;
-    background-size: 40px 60px;
-    font-weight: bold;
-    line-height: 40px;
-    color: #000;
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #1F1F21;
 }

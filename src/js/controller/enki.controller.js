@@ -32,7 +32,7 @@
             {
                 id: 3,
                 etiqueta: 'flag1',
-                nombre: 'Administrador de hoteles para LatAm',
+                nombre: 'Booking de hoteles para LatAm',
                 autor: 'abr4xas',
                 votos: 38
             },
