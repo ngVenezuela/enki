@@ -29,3 +29,6 @@ node_modules
 
 # Build folder
 build
+
+# WebStorm config file
+.idea
