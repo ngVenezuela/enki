@@ -12,8 +12,8 @@
 
     function demoCtrl($stateParams) {
         var vm = this;
-        vm.numero = $stateParams.id;
-        
+        vm.numero = Number($stateParams.id) -1;
+
         vm.proyectos = [
             {
                 id: 1,
