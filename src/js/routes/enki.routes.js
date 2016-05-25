@@ -30,7 +30,7 @@
                 url: '/proyecto/:id',
                 templateUrl: '../templates/detalles.html',
                 controller: 'demoCtrl',
-                controllerAs: 'ctrlP'
+                controllerAs: 'ctrl'
             });
         $locationProvider.html5Mode({
             enabled: false,
