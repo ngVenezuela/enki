@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="enki">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Enki, the project manager - ngVenezuela</title>
+    <link rel="stylesheet" href="./src/css/enki.css">
+</head>
+
+<body>
+    <header>
+        <div class="enki_icon">
+            <img src="./src/img/icons/enki-icon.png" alt="Enki" />
+            <h1>nki - The Project Manager</h1>
+        </div>
+        <hr/>
+    </header>
+    <div class="page">
+
+        <div ui-view></div>
+    </div>
+    <footer>
+        <p>
+            &copy; <a href="https://github.com/ngvenezuela" target="_blank">ngVenezuela</a>
+        </p>
+    </footer>
+    <script src="./statics/js/angular-libs.min.js"></script>
+    <!-- Aplicación -->
+    <script src="./src/js/module/enki.module.js"></script>
+    <script src="./src/js/routes/enki.routes.js"></script>
+    <script src="./src/js/controller/enki.controller.js"></script>
+</body>
+
+</html>

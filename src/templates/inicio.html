@@ -1,25 +1,15 @@
-<table class="fadeInUp animated">
+<section>
+    <div class="project" ng-repeat="proyecto in ctrl.proyectos | orderBy:'-votos'">
 
-    <thead>
-        <tr>
-            <th>Proyecto</th>
-            <th>Por</th>
-            <th>Votos</th>
-        </tr>
-    </thead>
+        <h2 class="title">
+            <a ui-sref="detalles({id: proyecto.id})" title="{{ proyecto.nombre }}">
+                {{ proyecto.nombre }}
+            </a>
+        </h2>
 
-    <tbody>
-
-        <tr ng-repeat="proyecto in ctrl.proyectos">
-            <td>
-                <a ui-sref="detalles({id: proyecto.id})">
-                    <span class="{{ proyecto.etiqueta }}">{{ proyecto.id }}</span>{{ proyecto.nombre }}
-                </a>
-            </td>
-            <td><a href="#0">@{{ proyecto.autor }}</a></td>
-            <td>{{ proyecto.votos }}</td>
-        </tr>
-
-    </tbody>
-
-</table>
+        <p>
+            Este proyecto ha alcanzado la cantidad de <strong>{{ proyecto.votos }}</strong> votos y es de la autoria de:
+            @{{ proyecto.autor }}
+        </p>
+    </div>
+</section>

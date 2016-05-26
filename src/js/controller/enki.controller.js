@@ -12,8 +12,8 @@
 
     function demoCtrl($stateParams) {
         var vm = this;
-        vm.numero = $stateParams.id;
-        
+        vm.numero = Number($stateParams.id) -1;
+
         vm.proyectos = [
             {
                 id: 1,
@@ -32,7 +32,7 @@
             {
                 id: 3,
                 etiqueta: 'flag1',
-                nombre: 'Administrador de hoteles para LatAm',
+                nombre: 'Booking de hoteles para LatAm',
                 autor: 'abr4xas',
                 votos: 38
             },
