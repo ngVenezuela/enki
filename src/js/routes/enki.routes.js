@@ -9,7 +9,8 @@
         .config(routes);
 
     // Dependencias
-    routes.$injector = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+    /* @ngInject */
+    routes.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
     /**
     * @description gestiona las rutas de la aplicación.
@@ -22,13 +23,13 @@
         $stateProvider
             .state('inicio', {
                 url: '/',
-                templateUrl: '../templates/inicio.html',
+                templateUrl: './src/templates/inicio.html',
                 controller: 'demoCtrl',
                 controllerAs: 'ctrl'
             })
             .state('detalles', {
                 url: '/proyecto/:id',
-                templateUrl: '../templates/detalles.html',
+                templateUrl: './src/templates/detalles.html',
                 controller: 'demoCtrl',
                 controllerAs: 'ctrl'
             });

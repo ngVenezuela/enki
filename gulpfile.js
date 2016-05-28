@@ -2,7 +2,10 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     size = require('gulp-size'),
     uglify  = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    concat  = require('gulp-concat'),
+    del     = require('del'),
+    ngAnotate = require('gulp-ng-annotate');
 
 
 // Servidor estático.
@@ -11,27 +14,43 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./src"
+            baseDir: "./"
         }
     });
     gulp.watch(['./src/**/*'], browserSync.reload);
 });
 
-// Js Bundle
-gulp.task('bundleJS', function () {
-    
-    gulp.src('./node_modules/angular/angular.js')
+// Angular Libs Bundle
+gulp.task('bundleAngularLibs',['delete'], function () {
+    var angularLib = './node_modules/angular/angular.js',
+        uiRouter = './node_modules/angular-ui-router/release/angular-ui-router.js';
+
+    gulp.src([angularLib,uiRouter])
+        .pipe(concat('angular-libs.min.js'))
         .pipe(uglify())
         .pipe(size({gzip: true, showFiles: true}))
-        .pipe(rename('angular.min.js'))
-        .pipe(gulp.dest('./src/js'));
-        
-    gulp.src('./node_modules/angular-ui-router/release/angular-ui-router.js')
-        .pipe(uglify())
-        .pipe(size({gzip: true, showFiles: true}))
-        .pipe(rename('angular-ui-router.min.js'))
-        .pipe(gulp.dest('./src/js')); 
+        .pipe(gulp.dest('./statics/js'));
 });
 
+// Application JS Bundle
+gulp.task('bundleJs',['delete'], function () {
+    var module = './src/js/module/*.js',
+        routes = './src/js/routes/*.js',
+        controllers = './src/js/controller/*.js';
 
-gulp.task('default', ['browser-sync', 'bundleJS']);
+    return gulp.src([module,routes,controllers])
+        .pipe(concat('enki.min.js',{newLine: ';'}))
+        .pipe(ngAnotate({
+            add:true,
+            single_quotes: true
+        }))
+        .pipe(uglify())
+        .pipe(size({gzip: true, showFiles: true}))
+        .pipe(gulp.dest('./statics/js'))
+});
+// Delete
+gulp.task('delete', function () {
+    return del(['statics']);
+});
+
+gulp.task('default', ['delete','browser-sync', 'bundleAngularLibs', 'bundleJs']);
