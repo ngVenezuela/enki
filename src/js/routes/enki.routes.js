@@ -9,7 +9,8 @@
         .config(routes);
 
     // Dependencias
-    routes.$injector = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+    /* @ngInject */
+    routes.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
     /**
     * @description gestiona las rutas de la aplicación.
