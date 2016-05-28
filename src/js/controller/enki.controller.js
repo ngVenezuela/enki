@@ -8,8 +8,8 @@
         .module('enki')
         .controller('demoCtrl', demoCtrl);
 
-    demoCtrl.$injector = ['$stateParams'];
-
+    /* @ngInject */
+    demoCtrl.$inject = ['$stateParams'];
     function demoCtrl($stateParams) {
         var vm = this;
         vm.numero = Number($stateParams.id) -1;

@@ -5,8 +5,5 @@
 (function () {
     'use strict';
     angular
-        .module(
-        'enki', [
-            'ui.router'
-        ]);
+        .module('enki', ['ui.router']);
 })();
