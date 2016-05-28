@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     uglify  = require('gulp-uglify'),
     rename = require('gulp-rename'),
     concat  = require('gulp-concat'),
-    del     = require('del');
+    del     = require('del'),
+    ngAnotate = require('gulp-ng-annotate');
 
 
 // Servidor estático.
@@ -19,8 +20,8 @@ gulp.task('browser-sync', function() {
     gulp.watch(['./src/**/*'], browserSync.reload);
 });
 
-// Js Bundle
-gulp.task('bundleJS',['delete'], function () {
+// Angular Libs Bundle
+gulp.task('bundleAngularLibs',['delete'], function () {
     var angularLib = './node_modules/angular/angular.js',
         uiRouter = './node_modules/angular-ui-router/release/angular-ui-router.js';
 
@@ -31,9 +32,25 @@ gulp.task('bundleJS',['delete'], function () {
         .pipe(gulp.dest('./statics/js'));
 });
 
+// Application JS Bundle
+gulp.task('bundleJs',['delete'], function () {
+    var module = './src/js/module/*.js',
+        routes = './src/js/routes/*.js',
+        controllers = './src/js/controller/*.js';
+
+    return gulp.src([module,routes,controllers])
+        .pipe(concat('enki.min.js',{newLine: ';'}))
+        .pipe(ngAnotate({
+            add:true,
+            single_quotes: true
+        }))
+        .pipe(uglify())
+        .pipe(size({gzip: true, showFiles: true}))
+        .pipe(gulp.dest('./statics/js'))
+});
 // Delete
 gulp.task('delete', function () {
     return del(['statics']);
 });
 
-gulp.task('default', ['delete','browser-sync', 'bundleJS']);
+gulp.task('default', ['delete','browser-sync', 'bundleAngularLibs', 'bundleJs']);
